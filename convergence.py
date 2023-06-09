@@ -12,3 +12,8 @@ with open("H_HMDS.log") as log_file:
 
 # Define list to store number of steps for plotting purposes
 steps = list(range(1, len(energies) + 1))
+
+# Creating plot
+fig, ax = plt.subplots()
+ax.plot(steps, energies)
+plt.show()
