@@ -2,4 +2,4 @@
 with open("H_HMDS.log") as log_file:
     for line in log_file:
         if 'SCF Done' in line:
-            print(line)
+            print(line.split()[4])
