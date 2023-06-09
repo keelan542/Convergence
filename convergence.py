@@ -1,3 +1,6 @@
+# Import statements
+import matplotlib.pyplot as plt
+
 # Define list to store energy values
 energies = []
 
