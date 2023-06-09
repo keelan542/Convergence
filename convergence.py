@@ -15,7 +15,7 @@ steps = list(range(1, len(energies) + 1))
 
 # Creating plot
 fig, ax = plt.subplots()
-ax.plot(steps, energies)
+ax.plot(steps, energies, marker='x')
 ax.set_xticks(steps)
 ax.set_xlabel('Step')
 ax.set_ylabel('Energy')
