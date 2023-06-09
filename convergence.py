@@ -7,5 +7,5 @@ with open("H_HMDS.log") as log_file:
         if 'SCF Done' in line:
             energies.append(float(line.split()[4]))
 
-for step, energy in enumerate(energies):
-    print('Step ' + str(step+1) + ' energy: ' + str(energy))
+# Define list to store number of steps for plotting purposes
+steps = list(range(1, len(energies) + 1))
