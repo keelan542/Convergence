@@ -26,10 +26,9 @@ for i in range(len(energies)):
 steps = list(range(1, len(energies) + 1))
 
 # Creating plot
-fig, ax = plt.subplots()
-ax.plot(steps, energies, marker='x')
-ax.set_xticks(steps)
-ax.set_xlabel('Step')
-ax.set_ylabel('Energy [kcal/mol]')
-ax.set_title('Convergence')
+plt.plot(steps, energies, marker='x')
+plt.xticks(steps)
+plt.xlabel('Step')
+plt.ylabel('Energy [kcal/mol]')
+plt.title('Convergence')
 plt.show()
