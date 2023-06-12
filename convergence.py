@@ -11,8 +11,8 @@ try:
         for line in log_file:
             if 'SCF Done' in line:
                 energies.append(float(line.split()[4]))
-except IndexError:
-    print("No output file given!")
+except Exception:
+    print(sys.argv[1] + " does not exist!")
     sys.exit()
 
 # Getting zero point of energies
