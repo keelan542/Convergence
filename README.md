@@ -4,5 +4,7 @@ This is a simple python program that will plot the convergence of a geometry opt
 
 Usage: py convergence.py <name_of_file.log>
 
+Package Requirements: Matplotlib, NumPy
+
 Here is an example output:
 ![Example](example.png)
